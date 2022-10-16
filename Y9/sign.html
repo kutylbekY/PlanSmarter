@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style-login.css">
+    <title>SignUp</title>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function SubForm (){
+          $.ajax({
+              url:'https://api.apispreadsheets.com/data/owvtZ8h6YU8o8q0q/',
+              type:'post',
+              data:$("#Form").serializeArray(),
+              success: function(){
+                alert("Form Data Submitted :)")
+              },
+              error: function(){
+                alert("There was an error :(")
+              }
+          });
+      }
+    </script>
+
+  </head>
+  <body>
+    <img class = "logo" src="logo-wb.png">
+    <a href="file:///D:/Users/Desktop/Folders/Uni/Study/SEM_1/COMP10120/Group%20Project/Y9/index.html">
+      <button type="button" name="button" class="home">Home</button>
+    </a>
+
+    <!-- <div id="con-form"> -->
+      <!-- <button type="button" name="button" id="changeToSignUp" onclick = "changeToSignUp()">SignUp</button> -->
+      <!-- <button type="button" name="button" id="changeToLogIn" onclick = "changeToLogIn()">LogIn</button> -->
+    <form id="Form">
+      <input type="text" id="su-username" class = "su-username" placeholder="Username" name="username" />
+      <br>
+      <input type="text" id="su-email" placeholder="Emial" name="email" />
+      <br>
+      <input type="password" id="su-password" placeholder="Password" name="password" />
+      <br>
+      <input type="password" id="su-cpassword" placeholder="Confirm Password" name="c-password" />
+      <br>
+      <!-- <p> Already a member? Log in <a href="file:///D:/Users/Desktop/Folders/Uni/Study/SEM_1/COMP10120/Group%20Project/Y9/Login.html">here</a></p> -->
+    </form>
+    <button class="button_form" onclick="SubForm()">Sign Up</button>
+      <!-- </div> -->
+    <!-- </div> -->
+    <form method="POST" id="myForm">
+      <label>Username</label>
+      <br/>
+      <input name="username" />
+      <br/>
+      <label>Email</label>
+      <br/>
+      <input name="email" />
+      <br/>
+      <label>password</label>
+      <br/>
+      <input type="password" id="s-password" name="password" br/>
+      <br/>
+      <label>confirm password</label>
+      <br/>
+      <input type="password" id="s-password" name="c-password" br/>
+      <br/>
+    </form>
+    <button onclick="SubForm()">Sign Up</button>
+
+
+  </body>
+</html>

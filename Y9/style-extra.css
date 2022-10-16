@@ -1,0 +1,795 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: #B8B8B8; */
+  background: white;
+  /* background: black; */
+  /* font-family: sans-serif; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------------- beginning of top-menu -------------- */
+
+.logo {
+  /* border: 1px solid blue; */
+  display: block;
+  position: absolute;
+  height: 3vw;
+  width: 3vw;
+  padding-top: 0.4%;
+  margin: -4vw 0 0 48%;
+}
+
+.top-menu {
+  display: block;
+  margin-top: 5%;
+  border-top: 0.1px solid #D5E0E0;
+  /* border: 1px solid blue; */
+  border-bottom: 0.1px solid #D5E0E0;
+  width: 100%;
+  height: 5vw;
+}
+.menu {
+  margin-right: 5vw;
+  height: 5vw;
+  float: left;
+  /* border: 2px solid red; */
+}
+#top-menu-div-1 {
+  width: 35%;
+  margin-left: 33.3%;
+  /* border: 1px solid red; */
+}
+#top-menu-div-2 {
+  width: 5%;
+  margin-left: 16.5%;
+}
+.menu li {
+  text-align: center;
+  list-style-type: none;
+  /* border: 1px solid red; */
+  float: left;
+  margin-left: 4%;
+  /* margin-right: 1vw; */
+  padding: 2vw 1vw 2vw 1vw;
+  height: 1vw;
+  color: #525858;
+  width: 5vw;
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 1vw;
+}
+#top-menu-div-1 p {
+  margin-top: -1%;
+  font-size: 1vw;
+}
+#top-menu-div-1 p:hover {
+  transition: 0.6s;
+  cursor: pointer;
+  font-size: 1.1vw;
+}
+
+#top-menu-div-1 li:hover {
+  /* font-size: 1.1vw; */
+  transition: 0.6s;
+  cursor: pointer;
+  background: rgba(247, 247, 247);
+}
+
+#top-menu-div-2 li {
+  /* border: 1px solid red; */
+}
+.menu-pic {
+  margin-top: -30%;
+  /* border: 1px solid blue; */
+  width:4vw;
+  height:4vw;
+  border-radius: 10px;
+}
+.menu-pic:hover {
+  transition: 0.6s;
+  cursor: pointer;
+  margin-top: -40%;
+  /* border: 1px solid blue; */
+  width:5vw;
+  height:5vw;
+}
+
+#invisible {
+  margin-top: -1%;
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+#invisible2 {
+  /* margin-top: 2%; */
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
+#invisible2:hover {
+  transition: 0.1s;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+/* -------------- ending of top-menu ----------------- */
+
+
+/* -------------- beginning of main nutrition -------------- */
+
+.main-nut {
+  display: block;
+  width: 80%;
+  height: 30vw;
+  /* border: 1px solid red; */
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.main-table {
+  /* display: table; */
+  /* border: 1px s  olid; */
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  font-size: 1vw;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  /* margin: 25px 0; */
+}
+
+.main-table thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+.main-table tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+.main-table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+.main-table tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+.h {
+    background-color: white;
+    border-right: 2px solid #009879;
+}
+
+.main-table th, .main-table td {
+  padding: 0.8% 0.8%;
+}
+
+.main-table a {
+  height: 1vw;
+  width: 2vw;
+  background: #009879;
+  color: #ffffff;
+  padding: 1% 2%;
+  border-radius: 15%;
+}
+
+#div-img-btn {
+  display: block;
+  /* border: 1px solid red; */
+
+}
+#div-img {
+  display: block;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 85vw;
+  /* margin-left: 12.5%; */
+  margin-top: -12%;
+}
+#main-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+#main-img:hover {
+  cursor: pointer;
+}
+
+#div-btn {
+  margin-left: 90%;
+  margin-top: 4%;
+}
+#btn-choose {
+  margin-left: 90%;
+  margin-top: 1%;
+}
+#hideChoose {
+  /* border: 1px solid red; */
+  padding: 0;
+  margin-top: 5%;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  font-size: 1vw;
+}
+#div-btn, #btn-choose {
+  display: block;
+  height: 2.5vw;
+  width: 5vw;
+  text-align: center;
+  padding-top: 0.8vw;
+  background: #009879;
+  color: #ffffff;
+  border-radius: 10%;
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  font-size: 1vw;
+  text-decoration: none;
+}
+#div-btn:hover, #btn-choose:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#day1 {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#day2 {
+  margin-left: 48%;
+  margin-top: -26%;
+}
+#day3 {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#day4 {
+  margin-left: 48%;
+  margin-top: -26%;
+}
+#day6 {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#day7 {
+  margin-left: 48%;
+  margin-top: -26%;
+}
+#day1, #day2, #day3, #day4, #day6, #day7 {
+  display: block;
+  /* border: 1px solid red; */
+  width: 40%;
+  height: 25.8vw;
+}
+
+#table-nut {
+  /* display: table; */
+  /* border: 1px s  olid; */
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  font-size: 0.7vw;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  /* margin: 25px 0; */
+}
+
+#table-nut thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+#table-nut th{
+  width: 10%;
+}
+
+#table-nut tbody tr{
+  border-bottom: 1px solid #dddddd;
+  height: 3vw;
+}
+#table-nut tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+#main-table-sch tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+#table-nut th, #table-nut td {
+  padding: 0.8% 0.8%;
+}
+
+#table-nut td {
+  border-right: 2px solid #009879;
+}
+
+/* -------------- ending of main nutrition ----------------- */
+
+/* -------------- beginning of main schedule ----------------- */
+
+#main-table-sch {
+  /* display: table; */
+  /* border: 1px s  olid; */
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  font-size: 1vw;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-family: Hind, sans-serif;
+  text-transform: uppercase;
+  /* margin: 25px 0; */
+}
+
+#main-table-sch thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+#main-table-sch th{
+  width: 10%;
+}
+
+#main-table-sch tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+#main-table-sch tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+#main-table-sch tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+.h {
+    background-color: white;
+}
+
+#main-table-sch th, #main-table-sch td {
+  padding: 0.8% 0.8%;
+}
+
+#main-table-sch td {
+  border-right: 2px solid #009879;
+}
+
+/* -------------- ending of main schedule ----------------- */
+
+/* -------------- beginning of main fitness ----------------- */
+
+.fit-main {
+  width: 100%;
+  height: 30vw;
+  /* border: 1px solid red; */
+  margin-top: 5%;
+}
+
+#fit-text {
+  width: 77.6%;
+  height: 8vw;
+  /* border: 1px solid blue; */
+  margin-left: 11.8%;
+  /* padding-bottom: 1.5%; */
+}
+#fit-con-1 {
+  width: 80%;
+  height: 23vw;
+  /* border: 1px solid blue; */
+  margin-left: 10%;
+}
+#fit-con-2 {
+  width: 80%;
+  height: 23vw;
+  /* border: 1px solid blue; */
+  margin-left: 10%;
+}
+
+#fit-text h2 {
+  /* border: 1px solid blue; */
+  margin-top: -0.5%;
+  font-family: Hind, sans-serif;
+  font-size: 1.5vw;
+  color: #565656;
+}
+#fit-text h3 {
+  /* border: 1px solid red; */
+  margin-top: -1.5%;
+  font-family: Hind, sans-serif;
+  font-size: 1vw;
+  color: #565656;
+}
+
+.day1-3 {
+  margin-left: 2.4%;
+}
+.day4 {
+  margin-left: 19%;
+}
+.day5 {
+  margin-left: 2.4%;
+}
+
+.day1-3, .day4, .day5 {
+  position: relative;
+  float: left;
+  border: 1px solid #A3A3A3;
+  text-align: center;
+  width: 30%;
+  height: 22vw;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.day1-3:hover, .day4:hover, .day5:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.DivPic {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin-left: 10%;
+  height: 17vw;
+  margin-top: -3%;
+  /* margin-left: 2.5vw; */
+}
+.day1-3:hover .DivPic {
+  transition: 0.6s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.Pic {
+  width:100%;
+  height:100%;
+}
+
+#fit-con-h3 {
+    font-family: Hind, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    color: #525858;
+}
+/* -------------- ending of main fitness ----------------- */
+
+/* -------------- beginning of main study ----------------- */
+
+.st-main {
+  /* border: 1px solid red; */
+  height: 38vw;
+  font-family: "Convergence", sans-serif;
+  /* height: 100vh; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  /* background-color: black; */
+}
+.st-subdiv {
+  margin-top: 5%;
+  /* border: 1px solid red; */
+  position: relative;
+  width: 30rem;
+  height: 2.3rem;
+  /* height: 30vw;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%; */
+}
+
+.st-subdiv-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+  font-family: "Convergence", sans-serif;
+  font-size: 1.2rem;
+  color: #009879;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+.st-subdiv-input:hover {
+  border-color: #009879;
+}
+.st-subdiv-input:focus {
+  border-color: #009879;
+}
+.st-subdiv-input:focus ~ .st-subdiv-label,
+.st-subdiv-input:not(:placeholder-shown).st-subdiv-input:not(:focus)~.st-subdiv-label{
+  top: -0.4rem;
+  font-size: 1rem;
+  left: 0.8rem;
+}
+
+.st-subdiv-label {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  /* padding: 0 0.5rem; */
+  color: gray;
+  cursor: text;
+  transition: top 200ms ease-in,
+              left 200ms ease-in,
+              font-size 200ms ease-in;
+  background-color: white;
+}
+
+.st-main input, .st-main label,
+.st-main input::before, .st-main label::before,
+.st-main input::after, .st-main label::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+    /* border: 1px solid blue; */
+}
+.dropdown2 {
+    /* border: 1px solid red; */
+    margin-top: -25%;
+}
+
+.time {
+  margin-left: -2.5%;
+  margin-top: 10%;
+}
+.day {
+  float: left;
+  margin-left: 52.5%;
+  margin-top: -9.8%;
+}
+
+.time, .day {
+  font-family: Hind, sans-serif;
+  /* text-transform: uppercase; */
+  text-align: center;
+  width: 50%;
+  font-size: 0.8vw;
+  padding: 2%;
+  color: #009879;
+  background-color: #eeeeee;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 5%;
+  font-weight: bold;
+  /* appearance: none; */
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+}
+.time:focus, .time:hover {
+  outline: none;
+  border: 1px solid #bbbbbb;
+}
+
+.time option {
+  background: #ffffff;
+
+}
+
+#buttons {
+  /* border: 1px solid red; */
+}
+
+#st-btn {
+  margin-left: 39%;
+  width: 5vw;
+  margin-top: 10%;
+}
+#st-btn-2 {
+  margin-left: 13%;
+  width: 5vw;
+  margin-top: 10%;
+}
+#st-btn-3 {
+  margin-left: 3%;
+  width: 5vw;
+  margin-top: 10%;
+}
+#st-btn-4 {
+  margin-left: 3%;
+  width: 6vw;
+  margin-top: 10%;
+}
+#st-btn-5 {
+  margin-left: 21%;
+  width: 6vw;
+  margin-top: 4%;
+}
+#st-btn-6 {
+  position: absolute;
+  margin-left: 1%;
+  width: 6vw;
+  margin-top: 0.9%;
+}
+
+#st-btn, #st-btn-2, #st-btn-3, #st-btn-4, #st-btn-5, #st-btn-6 {
+  height: 2.5vw;
+  text-align: center;
+  background: #009879;
+  color: #ffffff;
+  border-radius: 10%;
+  font-family: Hind, sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 1vw;
+  text-decoration: none;
+}
+#st-btn:hover, #st-btn-2:hover, #st-btn-3:hover, #st-btn-4:hover, #st-btn-5:hover, #st-btn-6:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#st-btn p, #st-btn-2 p, #st-btn-3 p {
+  margin-top: 10%;
+}
+#st-btn-4 p, #st-btn-5 p, #st-btn-6 p, #st-btn-7 p {
+  margin-top: 8%;
+}
+
+#alert {
+  margin-top: -3%;
+}
+/* -------------- ending of main study ----------------- */
+
+/* -------------- beginning of footer ----------------- */
+
+#AB-div {
+  width: 100%;
+  height: 153vw;
+  /* border: 1px solid red; */
+  /* margin-top: 5%; */
+}
+#day1-3, #day2-4, #day5 {
+  text-align: center;
+  width: 100%;
+  margin-top: 2%;
+  height: 48vw;
+  /* border: 1px solid blue; */
+  /* margin-top: 5%; */
+}
+#day2-4 {
+  height: 52vw;
+}
+#day5 {
+  height: 52vw;
+}
+#AB-div h2 {
+  font-size: 1.8vw;
+  font-family: Hind, sans-serif;
+  margin-top: -0.1%;
+  /* border: 1px solid red; */
+}
+#AB11, #AB12, #AB13, #AB14 {
+  width: 35%;
+  /* border: 1px solid red; */
+  height: 45%;
+  position: absolute;
+}
+#AB11 {
+  margin-left: 11%;
+  margin-top: -2%;
+}
+#AB12 {
+  float: left;
+  margin-left: 53%;
+  margin-top: -2%;
+}
+#AB13 {
+  margin-left: 11%;
+  margin-top: 20%;
+}
+#AB14 {
+  float: left;
+  margin-left: 53%;
+  margin-top: 20%;
+}
+.Pic1 {
+  margin-top: 5%;
+  height: 90%;
+  width: 100%;
+}
+#AB21, #AB22, #AB23, #AB24, #AB31, #AB32, #AB33, #AB34 {
+  width: 35%;
+  /* border: 1px solid red; */
+  height: 50%;
+  position: absolute;
+}
+#AB21, #AB31 {
+  margin-left: 11%;
+  margin-top: -2%;
+}
+#AB22, #AB32 {
+  float: left;
+  margin-left: 53%;
+  margin-top: -2%;
+}
+#AB23, #AB33 {
+  margin-left: 11%;
+  margin-top: 23%;
+}
+#AB24, #AB34 {
+  float: left;
+  margin-left: 53%;
+  margin-top: 23%;
+}
+.PicH {
+  height: 100%;
+  width: 60%;
+}
+/* -------------- ending of footer ----------------- */
+
+/* -------------- beginning of about ----------------- */
+
+.about-div {
+  margin-top: 1%;
+  margin-left: 10%;
+  border: 1px solid white;
+  width: 80%;
+  height: 37vw;
+}
+
+#top-left {
+  margin-top: 1%;
+  margin-left: 1%;
+  border: 1px solid #009879;
+  width: 65.5%;
+  height: 10vw;
+}
+#poster {
+  position: absolute;
+  margin-top: -10.1%;
+  margin-left: 54%;
+  /* border: 1px solid red; */
+  width: 25%;
+  height: 35.4vw;
+}
+#left {
+  margin-top: 1%;
+  margin-left: 1%;
+  border: 1px solid #009879;
+  width: 32.25%;
+  height: 24.5vw;
+}
+#top-left h3 {
+  margin-top: 3.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+#left h3, #right h3 {
+  margin-top: 12%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+#left h3, #top-left h3, #right h3 {
+  font-family: Hind, sans-serif;
+  font-size: 1vw;
+}
+#right {
+  margin-top: -30.75%;
+  margin-left: 34.25%;
+  border: 1px solid #009879;
+  width: 32.25%;
+  height: 24.5vw;
+}
+#poster-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------- ending of about -------------- */
+
+
+/*  */

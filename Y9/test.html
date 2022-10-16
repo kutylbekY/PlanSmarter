@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style-login.css">
+<title>Save Web Form Data to Spreadsheets - Contact Form</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/owvtZ8h6YU8o8q0q/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+</head>
+<body>
+  <form id="myForm">
+    <label>Username</label>
+    <br/>
+    <input name="username" />
+    <br/>
+    <label>Email</label>
+    <br/>
+    <input name="email" />
+    <br/>
+    <label>password</label>
+    <br/>
+    <input type="password" id="s-password" name="password" br/>
+    <br/>
+    <label>confirm password</label>
+    <br/>
+    <input type="password" id="s-password" name="c-password" br/>
+    <br/>
+  </form>
+  <button onclick="SubForm()">Sign Up</button>
+  <p> Already a member? Log in <a href="file:///D:/Users/Desktop/Folders/Uni/Study/SEM_1/COMP10120/Group%20Project/Y9/Login.html">here</a></p>
+</body>
+</html>

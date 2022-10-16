@@ -1,0 +1,47 @@
+
+    <script type="text/javascript">
+
+      function changeColor (a){
+        alert(a);
+        var green = 0;
+        if (green == 0) {
+          document.getElementById(a).style.backgroundColor = "green";
+          document.getElementById(a).style.color = "white";
+          green = 1;
+        }
+        else {
+          document.getElementById('M3').style.backgroundColor = "none";
+          document.getElementById('M3').style.color = "black";
+        }
+      }
+
+    </script>
+
+
+.changeBtn {
+  background-color: none;
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding-left: 7%;
+  margin-left: -7%;
+  padding-right: 6%;
+  margin-right: -6%;
+  padding-top: 6%;
+  margin-top: -6%;
+  padding-bottom: 6%;
+  margin-bottom: -6%;
+  /* border: 1px solid red; */
+}
+
+<td><a href="#" onclick="return changeColor('TH4');" class="changeBtn" id="TH4"><?php echo $array[3]['Thursday'];?></a></td>
+<td><a href="#" onclick="return changeColor('M3');" class="changeBtn" id="M3"><?php echo $array[2]['Monday'];?></a></td>
+
+
+
+if ($ok == 1 && $array[12]['Monday'] == '1') {
+              echo '<script type="text/JavaScript">
+                      document.getElementById("M1").style.backgroundColor = "green";
+                      document.getElementById("M1").style.color = "white";
+                    </script>';
+            }
